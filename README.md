@@ -1,16 +1,8 @@
-<div align="center">
-
-<img src="./assets/header.svg" width="100%" alt="LIEM — software engineer" />
-
-<img src="./assets/chain.svg" width="100%" alt="" />
-
-</div>
+<div align="center"><img src="./assets/header.svg" width="100%" alt="LIEM — software engineer" /><img src="./assets/chain.svg" width="100%" alt="" /></div>
 
 ### 🚀 Featured projects
 
-<div align="center">
-<img src="./assets/plaque.svg" width="100%" alt="Project showcase" />
-</div>
+<div align="center"><img src="./assets/plaque.svg" width="100%" alt="Project showcase" /></div>
 
 | # | Project | What it is | Tech |
 | :---: | --- | --- | --- |
@@ -35,39 +27,12 @@ const liem = {
 
 ### 🛠️ Tech stack
 
-<div align="center">
-
-![JavaScript](https://img.shields.io/badge/JavaScript-0b0c0f?style=for-the-badge&logo=javascript&logoColor=e5e4e2&labelColor=0b0c0f)
-![TypeScript](https://img.shields.io/badge/TypeScript-0b0c0f?style=for-the-badge&logo=typescript&logoColor=e5e4e2&labelColor=0b0c0f)
-![HTML5](https://img.shields.io/badge/HTML5-0b0c0f?style=for-the-badge&logo=html5&logoColor=e5e4e2&labelColor=0b0c0f)
-![CSS3](https://img.shields.io/badge/CSS3-0b0c0f?style=for-the-badge&logo=css&logoColor=e5e4e2&labelColor=0b0c0f)
-![Angular](https://img.shields.io/badge/Angular-0b0c0f?style=for-the-badge&logo=angular&logoColor=e5e4e2&labelColor=0b0c0f)
-![Git](https://img.shields.io/badge/Git-0b0c0f?style=for-the-badge&logo=git&logoColor=e5e4e2&labelColor=0b0c0f)
-
-</div>
+<div align="center"><img src="https://img.shields.io/badge/JavaScript-0b0c0f?style=for-the-badge&logo=javascript&logoColor=e5e4e2&labelColor=0b0c0f" alt="JavaScript" /><img src="https://img.shields.io/badge/TypeScript-0b0c0f?style=for-the-badge&logo=typescript&logoColor=e5e4e2&labelColor=0b0c0f" alt="TypeScript" /><img src="https://img.shields.io/badge/HTML5-0b0c0f?style=for-the-badge&logo=html5&logoColor=e5e4e2&labelColor=0b0c0f" alt="HTML5" /><img src="https://img.shields.io/badge/CSS3-0b0c0f?style=for-the-badge&logo=css&logoColor=e5e4e2&labelColor=0b0c0f" alt="CSS3" /><img src="https://img.shields.io/badge/Angular-0b0c0f?style=for-the-badge&logo=angular&logoColor=e5e4e2&labelColor=0b0c0f" alt="Angular" /><img src="https://img.shields.io/badge/Git-0b0c0f?style=for-the-badge&logo=git&logoColor=e5e4e2&labelColor=0b0c0f" alt="Git" /></div>
 
 ### 📊 GitHub stats
 
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=liemnt02784-netizen&show_icons=true&count_private=true&include_all_commits=true&bg_color=0b0c0f&title_color=f4f5f7&text_color=c0c4cc&icon_color=e5e4e2&border_color=3a3f46&ring_color=e5e4e2" alt="stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=liemnt02784-netizen&layout=compact&bg_color=0b0c0f&title_color=f4f5f7&text_color=c0c4cc&border_color=3a3f46" alt="top languages" />
-
-<img src="https://streak-stats.demolab.com?user=liemnt02784-netizen&background=0b0c0f&border=3a3f46&stroke=3a3f46&ring=e5e4e2&fire=ffffff&currStreakNum=f4f5f7&sideNums=f4f5f7&currStreakLabel=c0c4cc&sideLabels=a8adb5&dates=6b7280" alt="streak" />
-
-</div>
+<div align="center"><img height="165" src="https://github-readme-stats.vercel.app/api?username=liemnt02784-netizen&show_icons=true&count_private=true&include_all_commits=true&bg_color=0b0c0f&title_color=f4f5f7&text_color=c0c4cc&icon_color=e5e4e2&border_color=3a3f46&ring_color=e5e4e2" alt="stats" /><img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=liemnt02784-netizen&layout=compact&bg_color=0b0c0f&title_color=f4f5f7&text_color=c0c4cc&border_color=3a3f46" alt="top languages" /><br /><img src="https://streak-stats.demolab.com?user=liemnt02784-netizen&background=0b0c0f&border=3a3f46&stroke=3a3f46&ring=e5e4e2&fire=ffffff&currStreakNum=f4f5f7&sideNums=f4f5f7&currStreakLabel=c0c4cc&sideLabels=a8adb5&dates=6b7280" alt="streak" /></div>
 
 ### 🐍 Contribution graph
 
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/liemnt02784-netizen/liemnt02784-netizen/output/snake-dark.svg" />
-  <img src="https://raw.githubusercontent.com/liemnt02784-netizen/liemnt02784-netizen/output/snake-light.svg" alt="snake eating contributions" />
-</picture>
-
-<img src="./assets/chain.svg" width="100%" alt="" />
-
-<sub>Built with ☕ and <code>git push</code> · 2026</sub>
-
-</div>
+<div align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/liemnt02784-netizen/liemnt02784-netizen/output/snake-dark.svg" /><img src="https://raw.githubusercontent.com/liemnt02784-netizen/liemnt02784-netizen/output/snake-light.svg" alt="snake eating contributions" /></picture><img src="./assets/chain.svg" width="100%" alt="" /><br /><sub>Built with ☕ and <code>git push</code> · 2026</sub></div>
