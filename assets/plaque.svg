@@ -55,7 +55,7 @@
     @keyframes arm { 0%, 100% { transform: rotate(0deg); } 50% { transform: rotate(1.4deg); } }
   </style>
 
-  <!-- khung bảng vinh danh -->
+  <!-- khung bảng dự án -->
   <rect x="6" y="6" width="1188" height="408" rx="18" fill="#0b0c0f" stroke="url(#frame)" stroke-width="6"/>
   <rect x="22" y="22" width="1156" height="376" rx="10" fill="none" stroke="#2a2e34" stroke-width="1.5"/>
 
@@ -80,7 +80,7 @@
     </g>
     <circle cx="240" cy="210" r="58" fill="#111317" stroke="url(#chrome)" stroke-width="3"/>
     <text class="label" font-size="9.5" letter-spacing="2.4" fill="#a8adb5">
-      <textPath href="#ring">★ LIEM RECORDS ★ CERTIFIED PLATINUM 2026 </textPath>
+      <textPath href="#ring">★ NGUYEN THANH LIEM ★ SOFTWARE ENGINEER </textPath>
     </text>
     <text x="240" y="218" text-anchor="middle" class="title" font-size="24" fill="url(#chrome)">LIEM</text>
     <circle cx="240" cy="210" r="4" fill="#0b0c0f"/>
@@ -99,15 +99,15 @@
   </g>
 
   <!-- chữ bảng vinh danh -->
-  <text x="500" y="92" class="title" font-size="44" letter-spacing="4" fill="url(#chrome)">CERTIFIED PLATINUM</text>
-  <text x="500" y="92" class="title" font-size="44" letter-spacing="4" fill="url(#shine)">CERTIFIED PLATINUM</text>
-  <text x="502" y="124" class="label" font-size="12" letter-spacing="4" fill="#7d848e">PRESENTED TO</text>
+  <text x="500" y="92" class="title" font-size="44" letter-spacing="4" fill="url(#chrome)">PROJECT SHOWCASE</text>
+  <text x="500" y="92" class="title" font-size="44" letter-spacing="4" fill="url(#shine)">PROJECT SHOWCASE</text>
+  <text x="502" y="124" class="label" font-size="12" letter-spacing="4" fill="#7d848e">ENGINEERED BY</text>
   <text x="502" y="152" class="label" font-size="22" letter-spacing="6" fill="url(#silver)">NGUYEN THANH LIEM</text>
   <rect x="502" y="172" width="640" height="1.5" fill="url(#hl)"/>
-  <text x="502" y="202" class="label" font-size="12" letter-spacing="4" fill="#7d848e">TRACKLIST</text>
-  <text x="1142" y="202" text-anchor="end" class="label" font-size="12" letter-spacing="4" fill="#7d848e">NOW PLAYING</text>
+  <text x="502" y="202" class="label" font-size="12" letter-spacing="4" fill="#7d848e">FEATURED PROJECTS</text>
+  <text x="1142" y="202" text-anchor="end" class="label" font-size="12" letter-spacing="4" fill="#7d848e">ACTIVE BUILD</text>
 
-  <!-- dải sáng + equalizer chạy lần lượt từng bài -->
+  <!-- dải sáng + thanh hoạt động chạy lần lượt từng dự án -->
   <g class="row" style="animation-delay:0s">
     <rect x="496" y="216" width="660" height="32" rx="6" fill="url(#hl)"/>
     <g fill="#e5e4e2"><rect class="eq" x="1124" y="222" width="4" height="20"/><rect class="eq" x="1131" y="222" width="4" height="20" style="animation-delay:-0.3s"/><rect class="eq" x="1138" y="222" width="4" height="20" style="animation-delay:-0.6s"/><rect class="eq" x="1145" y="222" width="4" height="20" style="animation-delay:-0.15s"/></g>
@@ -128,7 +128,7 @@
   <g class="mono" font-size="17">
     <text x="508" y="238" fill="#7d848e">01</text>
     <text x="548" y="238" fill="#eef0f3">JavaScript</text>
-    <text x="1110" y="238" text-anchor="end" fill="#a8adb5">game-platform</text>
+    <text x="1110" y="238" text-anchor="end" fill="#a8adb5">AlgoViet</text>
     <text x="508" y="274" fill="#7d848e">02</text>
     <text x="548" y="274" fill="#eef0f3">TypeScript</text>
     <text x="1110" y="274" text-anchor="end" fill="#a8adb5">angurlarbtvn</text>
@@ -137,14 +137,14 @@
     <text x="1110" y="310" text-anchor="end" fill="#a8adb5">Clone-Web-GTA-VI</text>
     <text x="508" y="346" fill="#7d848e">04</text>
     <text x="548" y="346" fill="#eef0f3">Game Dev</text>
-    <text x="1110" y="346" text-anchor="end" fill="#a8adb5">nightmare-game</text>
+    <text x="1110" y="346" text-anchor="end" fill="#a8adb5">game-platform</text>
   </g>
   <g stroke="#3a3f46" stroke-width="1.5" stroke-dasharray="2 6">
-    <line x1="680" y1="233" x2="930" y2="233"/>
+    <line x1="680" y1="233" x2="1010" y2="233"/>
     <line x1="680" y1="269" x2="940" y2="269"/>
     <line x1="680" y1="305" x2="900" y2="305"/>
-    <line x1="660" y1="341" x2="920" y2="341"/>
+    <line x1="660" y1="341" x2="960" y2="341"/>
   </g>
 
-  <text x="1142" y="384" text-anchor="end" class="label" font-size="11" letter-spacing="3" fill="#5c636d">LIEM RECORDS · VOL. 2026</text>
+  <text x="1142" y="384" text-anchor="end" class="label" font-size="11" letter-spacing="3" fill="#5c636d">BUILD 2026 · STATUS: STABLE</text>
 </svg>

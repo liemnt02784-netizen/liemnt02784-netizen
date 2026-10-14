@@ -1,37 +1,39 @@
 <div align="center">
 
-<img src="./assets/header.svg" width="100%" alt="LIEM — certified platinum" />
+<img src="./assets/header.svg" width="100%" alt="LIEM — software engineer" />
 
 <img src="./assets/chain.svg" width="100%" alt="" />
 
 </div>
 
-### 🎤 Verse 1 — Who's on the mic
+### 🚀 Featured projects
+
+<div align="center">
+<img src="./assets/plaque.svg" width="100%" alt="Project showcase" />
+</div>
+
+| # | Project | What it is | Tech |
+| :---: | --- | --- | --- |
+| 01 | **[AlgoViet](https://github.com/liemnt02784-netizen/AlgoViet)** | Algorithm visualizer — watch algorithms run step by step | HTML · CSS · JavaScript |
+| 02 | [angurlarbtvn](https://github.com/liemnt02784-netizen/angurlarbtvn) | Angular web app | TypeScript · Angular |
+| 03 | [Clone-Web-GTA-VI](https://github.com/liemnt02784-netizen/Clone-Web-GTA-VI) | GTA VI landing page clone | HTML · CSS |
+| 04 | [game-platform](https://github.com/liemnt02784-netizen/game-platform) | Browser game platform | JavaScript |
+| 05 | [nightmare-game](https://github.com/liemnt02784-netizen/nightmare-game) | Browser game | JavaScript |
+
+### 👨‍💻 About me
 
 ```js
 const liem = {
   name:   "Nguyen Thanh Liem",
   from:   "Vietnam 🇻🇳",
-  flow:   ["JavaScript", "TypeScript", "HTML/CSS", "Angular"],
-  vibe:   "code như rap — bug thì freestyle",
-  status: "cooking the next track 🔥",
+  role:   "Software Engineer",
+  stack:  ["JavaScript", "TypeScript", "HTML/CSS", "Angular"],
+  focus:  ["clean code", "scalable systems", "great UX"],
+  status: "shipping the next feature 🚀",
 };
 ```
 
-### 💿 Verse 2 — The album
-
-<div align="center">
-<img src="./assets/plaque.svg" width="100%" alt="Certified platinum — tracklist" />
-</div>
-
-| Track | Repo | Beat |
-| :---: | --- | --- |
-| 01 | [game-platform](https://github.com/liemnt02784-netizen/game-platform) | JavaScript |
-| 02 | [angurlarbtvn](https://github.com/liemnt02784-netizen/angurlarbtvn) | TypeScript · Angular |
-| 03 | [Clone-Web-GTA-VI](https://github.com/liemnt02784-netizen/Clone-Web-GTA-VI) | HTML · CSS |
-| 04 | [nightmare-game](https://github.com/liemnt02784-netizen/nightmare-game) | JavaScript |
-
-### 🔊 Verse 3 — Stack
+### 🛠️ Tech stack
 
 <div align="center">
 
@@ -44,7 +46,7 @@ const liem = {
 
 </div>
 
-### 📈 Verse 4 — Charts
+### 📊 GitHub stats
 
 <div align="center">
 
@@ -55,7 +57,7 @@ const liem = {
 
 </div>
 
-### 🐍 Outro — Eating the beat
+### 🐍 Contribution graph
 
 <div align="center">
 
@@ -66,6 +68,6 @@ const liem = {
 
 <img src="./assets/chain.svg" width="100%" alt="" />
 
-<sub>LIEM RECORDS · VOL. 2026 — <i>mic drop</i> 🎤⬇️</sub>
+<sub>Built with ☕ and <code>git push</code> · 2026</sub>
 
 </div>
