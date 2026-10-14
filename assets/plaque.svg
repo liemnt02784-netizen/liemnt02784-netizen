@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420">
+  <defs>
+    <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.25" stop-color="#8a919a"/>
+      <stop offset="0.5" stop-color="#f4f5f7"/>
+      <stop offset="0.75" stop-color="#5c636d"/>
+      <stop offset="1" stop-color="#e5e4e2"/>
+    </linearGradient>
+    <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.4" stop-color="#b4bac2"/>
+      <stop offset="0.5" stop-color="#f7f8fa"/>
+      <stop offset="0.6" stop-color="#5c636d"/>
+      <stop offset="1" stop-color="#e2e5e9"/>
+    </linearGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9aa1aa"/>
+      <stop offset="0.5" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#9aa1aa"/>
+    </linearGradient>
+    <radialGradient id="disc" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#e9ecef"/>
+      <stop offset="0.4" stop-color="#9ea4ac"/>
+      <stop offset="0.72" stop-color="#cfd3d8"/>
+      <stop offset="0.93" stop-color="#8a919a"/>
+      <stop offset="1" stop-color="#4b5159"/>
+    </radialGradient>
+    <linearGradient id="hl" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e5e4e2" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#e5e4e2" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="shine" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="220" y2="80">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#fff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+        values="300 0; 1200 0; 1200 0" keyTimes="0; 0.5; 1" dur="5s" repeatCount="indefinite"/>
+    </linearGradient>
+    <path id="ring" d="M240,210 m-40,0 a40,40 0 1,1 80,0 a40,40 0 1,1 -80,0"/>
+  </defs>
+
+  <style>
+    .label { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; font-weight: 700; }
+    .title { font-family: Impact, Anton, 'Arial Black', sans-serif; }
+    .mono { font-family: Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace; }
+
+    .row { opacity: 0; animation: play 8s steps(1) infinite; }
+    @keyframes play { 0% { opacity: 1; } 25% { opacity: 0; } 100% { opacity: 0; } }
+
+    .eq { transform-box: fill-box; transform-origin: bottom; animation: eq 0.9s ease-in-out infinite alternate; }
+    @keyframes eq { 0% { transform: scaleY(0.25); } 100% { transform: scaleY(1); } }
+
+    .arm { transform-origin: 432px 62px; animation: arm 3s ease-in-out infinite; }
+    @keyframes arm { 0%, 100% { transform: rotate(0deg); } 50% { transform: rotate(1.4deg); } }
+  </style>
+
+  <!-- khung bảng vinh danh -->
+  <rect x="6" y="6" width="1188" height="408" rx="18" fill="#0b0c0f" stroke="url(#frame)" stroke-width="6"/>
+  <rect x="22" y="22" width="1156" height="376" rx="10" fill="none" stroke="#2a2e34" stroke-width="1.5"/>
+
+  <!-- đĩa bạch kim quay -->
+  <circle cx="240" cy="214" r="152" fill="#000" opacity="0.5"/>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 240 210" to="360 240 210" dur="5s" repeatCount="indefinite"/>
+    <circle cx="240" cy="210" r="150" fill="url(#disc)"/>
+    <g fill="none" stroke="#1b1e22" stroke-opacity="0.22" stroke-width="0.8">
+      <circle cx="240" cy="210" r="144"/>
+      <circle cx="240" cy="210" r="137" stroke-dasharray="40 6"/>
+      <circle cx="240" cy="210" r="130"/>
+      <circle cx="240" cy="210" r="123" stroke-dasharray="70 4"/>
+      <circle cx="240" cy="210" r="116"/>
+      <circle cx="240" cy="210" r="109"/>
+      <circle cx="240" cy="210" r="102" stroke-dasharray="55 5"/>
+      <circle cx="240" cy="210" r="95"/>
+      <circle cx="240" cy="210" r="88"/>
+      <circle cx="240" cy="210" r="81" stroke-dasharray="30 4"/>
+      <circle cx="240" cy="210" r="74"/>
+      <circle cx="240" cy="210" r="67"/>
+    </g>
+    <circle cx="240" cy="210" r="58" fill="#111317" stroke="url(#chrome)" stroke-width="3"/>
+    <text class="label" font-size="9.5" letter-spacing="2.4" fill="#a8adb5">
+      <textPath href="#ring">★ LIEM RECORDS ★ CERTIFIED PLATINUM 2026 </textPath>
+    </text>
+    <text x="240" y="218" text-anchor="middle" class="title" font-size="24" fill="url(#chrome)">LIEM</text>
+    <circle cx="240" cy="210" r="4" fill="#0b0c0f"/>
+  </g>
+  <!-- phản chiếu ánh đèn đứng yên trên mặt đĩa -->
+  <path d="M240,210 L315,80.1 A150,150 0 0,1 354.9,113.6 Z" fill="#fff" opacity="0.22"/>
+  <path d="M240,210 L165,339.9 A150,150 0 0,1 125.1,306.4 Z" fill="#fff" opacity="0.16"/>
+
+  <!-- cần đọc -->
+  <g class="arm">
+    <circle cx="432" cy="62" r="16" fill="url(#chrome)" stroke="#1f2328" stroke-width="2"/>
+    <path d="M432,62 L414,190 L356,262" fill="none" stroke="#1f2328" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M432,62 L414,190 L356,262" fill="none" stroke="url(#chrome)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="340" y="254" width="26" height="14" rx="3" fill="url(#chrome)" stroke="#1f2328" stroke-width="1.5" transform="rotate(-50 353 261)"/>
+    <circle cx="432" cy="62" r="5" fill="#1f2328"/>
+  </g>
+
+  <!-- chữ bảng vinh danh -->
+  <text x="500" y="92" class="title" font-size="44" letter-spacing="4" fill="url(#chrome)">CERTIFIED PLATINUM</text>
+  <text x="500" y="92" class="title" font-size="44" letter-spacing="4" fill="url(#shine)">CERTIFIED PLATINUM</text>
+  <text x="502" y="124" class="label" font-size="12" letter-spacing="4" fill="#7d848e">PRESENTED TO</text>
+  <text x="502" y="152" class="label" font-size="22" letter-spacing="6" fill="url(#silver)">NGUYEN THANH LIEM</text>
+  <rect x="502" y="172" width="640" height="1.5" fill="url(#hl)"/>
+  <text x="502" y="202" class="label" font-size="12" letter-spacing="4" fill="#7d848e">TRACKLIST</text>
+  <text x="1142" y="202" text-anchor="end" class="label" font-size="12" letter-spacing="4" fill="#7d848e">NOW PLAYING</text>
+
+  <!-- dải sáng + equalizer chạy lần lượt từng bài -->
+  <g class="row" style="animation-delay:0s">
+    <rect x="496" y="216" width="660" height="32" rx="6" fill="url(#hl)"/>
+    <g fill="#e5e4e2"><rect class="eq" x="1124" y="222" width="4" height="20"/><rect class="eq" x="1131" y="222" width="4" height="20" style="animation-delay:-0.3s"/><rect class="eq" x="1138" y="222" width="4" height="20" style="animation-delay:-0.6s"/><rect class="eq" x="1145" y="222" width="4" height="20" style="animation-delay:-0.15s"/></g>
+  </g>
+  <g class="row" style="animation-delay:-6s">
+    <rect x="496" y="252" width="660" height="32" rx="6" fill="url(#hl)"/>
+    <g fill="#e5e4e2"><rect class="eq" x="1124" y="258" width="4" height="20"/><rect class="eq" x="1131" y="258" width="4" height="20" style="animation-delay:-0.3s"/><rect class="eq" x="1138" y="258" width="4" height="20" style="animation-delay:-0.6s"/><rect class="eq" x="1145" y="258" width="4" height="20" style="animation-delay:-0.15s"/></g>
+  </g>
+  <g class="row" style="animation-delay:-4s">
+    <rect x="496" y="288" width="660" height="32" rx="6" fill="url(#hl)"/>
+    <g fill="#e5e4e2"><rect class="eq" x="1124" y="294" width="4" height="20"/><rect class="eq" x="1131" y="294" width="4" height="20" style="animation-delay:-0.3s"/><rect class="eq" x="1138" y="294" width="4" height="20" style="animation-delay:-0.6s"/><rect class="eq" x="1145" y="294" width="4" height="20" style="animation-delay:-0.15s"/></g>
+  </g>
+  <g class="row" style="animation-delay:-2s">
+    <rect x="496" y="324" width="660" height="32" rx="6" fill="url(#hl)"/>
+    <g fill="#e5e4e2"><rect class="eq" x="1124" y="330" width="4" height="20"/><rect class="eq" x="1131" y="330" width="4" height="20" style="animation-delay:-0.3s"/><rect class="eq" x="1138" y="330" width="4" height="20" style="animation-delay:-0.6s"/><rect class="eq" x="1145" y="330" width="4" height="20" style="animation-delay:-0.15s"/></g>
+  </g>
+
+  <g class="mono" font-size="17">
+    <text x="508" y="238" fill="#7d848e">01</text>
+    <text x="548" y="238" fill="#eef0f3">JavaScript</text>
+    <text x="1110" y="238" text-anchor="end" fill="#a8adb5">game-platform</text>
+    <text x="508" y="274" fill="#7d848e">02</text>
+    <text x="548" y="274" fill="#eef0f3">TypeScript</text>
+    <text x="1110" y="274" text-anchor="end" fill="#a8adb5">angurlarbtvn</text>
+    <text x="508" y="310" fill="#7d848e">03</text>
+    <text x="548" y="310" fill="#eef0f3">HTML / CSS</text>
+    <text x="1110" y="310" text-anchor="end" fill="#a8adb5">Clone-Web-GTA-VI</text>
+    <text x="508" y="346" fill="#7d848e">04</text>
+    <text x="548" y="346" fill="#eef0f3">Game Dev</text>
+    <text x="1110" y="346" text-anchor="end" fill="#a8adb5">nightmare-game</text>
+  </g>
+  <g stroke="#3a3f46" stroke-width="1.5" stroke-dasharray="2 6">
+    <line x1="680" y1="233" x2="930" y2="233"/>
+    <line x1="680" y1="269" x2="940" y2="269"/>
+    <line x1="680" y1="305" x2="900" y2="305"/>
+    <line x1="660" y1="341" x2="920" y2="341"/>
+  </g>
+
+  <text x="1142" y="384" text-anchor="end" class="label" font-size="11" letter-spacing="3" fill="#5c636d">LIEM RECORDS · VOL. 2026</text>
+</svg>

@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0" stop-color="#1d2026"/>
+      <stop offset="0.55" stop-color="#0b0c0f"/>
+      <stop offset="1" stop-color="#050506"/>
+    </radialGradient>
+
+    <!-- chrome bạch kim: các dải sáng/tối xen kẽ như kim loại đánh bóng -->
+    <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.16" stop-color="#eef0f3"/>
+      <stop offset="0.36" stop-color="#aeb4bc"/>
+      <stop offset="0.47" stop-color="#f7f8fa"/>
+      <stop offset="0.53" stop-color="#5c636d"/>
+      <stop offset="0.68" stop-color="#c8cdd4"/>
+      <stop offset="0.86" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#8a919a"/>
+    </linearGradient>
+
+    <linearGradient id="silver" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8a919a"/>
+      <stop offset="0.5" stop-color="#f4f5f7"/>
+      <stop offset="1" stop-color="#8a919a"/>
+    </linearGradient>
+
+    <linearGradient id="fadeLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e5e4e2" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#e5e4e2" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#e5e4e2" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- tia sáng chéo quét qua chữ -->
+    <linearGradient id="shine" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="320" y2="120">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.42" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="0.58" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+        values="-500 0; 1300 0; 1300 0" keyTimes="0; 0.55; 1" dur="4.5s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+
+    <clipPath id="clip0"><rect x="372" y="326" height="34" width="0">
+      <animate attributeName="width" values="0;456;456;0;0" keyTimes="0;0.1333;0.2833;0.325;1" dur="12s" repeatCount="indefinite"/>
+    </rect></clipPath>
+    <clipPath id="clip1"><rect x="360" y="326" height="34" width="0">
+      <animate attributeName="width" values="0;0;480;480;0;0" keyTimes="0;0.3333;0.4667;0.6167;0.6583;1" dur="12s" repeatCount="indefinite"/>
+    </rect></clipPath>
+    <clipPath id="clip2"><rect x="414" y="326" height="34" width="0">
+      <animate attributeName="width" values="0;0;372;372;0;0" keyTimes="0;0.6667;0.8;0.95;0.9917;1" dur="12s" repeatCount="indefinite"/>
+    </rect></clipPath>
+
+    <path id="star" d="M0,-12 C1,-3 3,-1 12,0 C3,1 1,3 0,12 C-1,3 -3,1 -12,0 C-3,-1 -1,-3 0,-12Z" fill="#ffffff"/>
+  </defs>
+
+  <style>
+    .big { font-family: Impact, Anton, 'Arial Black', 'Helvetica Neue', sans-serif; font-size: 190px; }
+    .label { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; font-weight: 700; }
+    .mono { font-family: Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace; font-size: 20px; }
+
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: twinkle 2.6s ease-in-out infinite; transform: scale(0); }
+    @keyframes twinkle {
+      0%, 100% { transform: scale(0) rotate(0deg); opacity: 0; }
+      45% { transform: scale(1) rotate(45deg); opacity: 1; }
+      60% { transform: scale(0.2) rotate(90deg); opacity: 0.4; }
+    }
+
+    .pulse { animation: pulse 3.2s ease-in-out infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 0.18; } 50% { opacity: 0.38; } }
+
+    .beamL { transform-origin: 140px -40px; animation: swayL 7s ease-in-out infinite; }
+    .beamR { transform-origin: 1060px -40px; animation: swayR 7s ease-in-out infinite; }
+    @keyframes swayL { 0%, 100% { transform: rotate(-14deg); } 50% { transform: rotate(10deg); } }
+    @keyframes swayR { 0%, 100% { transform: rotate(14deg); } 50% { transform: rotate(-10deg); } }
+
+    .dust { animation: rise 6s linear infinite; opacity: 0; }
+    @keyframes rise {
+      0% { transform: translateY(0); opacity: 0; }
+      15% { opacity: 0.8; }
+      100% { transform: translateY(-260px); opacity: 0; }
+    }
+
+    .cursor { animation: blink 0.9s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+
+  <rect width="1200" height="400" fill="url(#bg)"/>
+
+  <!-- đèn sân khấu -->
+  <polygon class="beamL" points="140,-40 60,420 260,420" fill="url(#beam)"/>
+  <polygon class="beamR" points="1060,-40 940,420 1140,420" fill="url(#beam)"/>
+
+  <!-- bụi bạc bay lên -->
+  <g fill="#e5e4e2">
+    <circle class="dust" cx="180" cy="390" r="1.6" style="animation-delay:0s"/>
+    <circle class="dust" cx="260" cy="400" r="1.1" style="animation-delay:1.4s"/>
+    <circle class="dust" cx="330" cy="395" r="1.8" style="animation-delay:3.1s"/>
+    <circle class="dust" cx="470" cy="405" r="1.2" style="animation-delay:2.2s"/>
+    <circle class="dust" cx="560" cy="398" r="1.5" style="animation-delay:4.4s"/>
+    <circle class="dust" cx="650" cy="402" r="1.1" style="animation-delay:0.7s"/>
+    <circle class="dust" cx="760" cy="396" r="1.7" style="animation-delay:3.7s"/>
+    <circle class="dust" cx="860" cy="404" r="1.2" style="animation-delay:1.9s"/>
+    <circle class="dust" cx="950" cy="398" r="1.5" style="animation-delay:5.0s"/>
+    <circle class="dust" cx="1030" cy="402" r="1.0" style="animation-delay:2.8s"/>
+  </g>
+
+  <!-- dòng tiêu đề nhỏ -->
+  <rect x="250" y="62" width="200" height="1.5" fill="url(#fadeLine)"/>
+  <rect x="750" y="62" width="200" height="1.5" fill="url(#fadeLine)"/>
+  <text x="600" y="68" text-anchor="middle" class="label" font-size="16" letter-spacing="7" fill="url(#silver)">★ CERTIFIED PLATINUM ★</text>
+
+  <!-- quầng sáng sau chữ -->
+  <text x="600" y="250" text-anchor="middle" class="big pulse" textLength="560" lengthAdjust="spacingAndGlyphs" fill="#ffffff" filter="url(#glow)">LIEM</text>
+
+  <!-- khối nổi 3D -->
+  <text x="600" y="258" text-anchor="middle" class="big" textLength="560" lengthAdjust="spacingAndGlyphs" fill="#1f2328">LIEM</text>
+  <text x="600" y="254" text-anchor="middle" class="big" textLength="560" lengthAdjust="spacingAndGlyphs" fill="#3d434b">LIEM</text>
+
+  <!-- mặt chrome -->
+  <text x="600" y="250" text-anchor="middle" class="big" textLength="560" lengthAdjust="spacingAndGlyphs"
+        fill="url(#chrome)" stroke="#ffffff" stroke-opacity="0.55" stroke-width="1.5">LIEM</text>
+
+  <!-- tia sáng quét -->
+  <text x="600" y="250" text-anchor="middle" class="big" textLength="560" lengthAdjust="spacingAndGlyphs" fill="url(#shine)">LIEM</text>
+
+  <!-- lấp lánh -->
+  <g transform="translate(352 92)"><use href="#star" class="twinkle" style="animation-delay:0s"/></g>
+  <g transform="translate(520 178)"><use href="#star" class="twinkle" style="animation-delay:0.9s"/></g>
+  <g transform="translate(700 96)"><use href="#star" class="twinkle" style="animation-delay:1.7s"/></g>
+  <g transform="translate(858 206)"><use href="#star" class="twinkle" style="animation-delay:0.4s"/></g>
+  <g transform="translate(612 236)"><use href="#star" class="twinkle" style="animation-delay:2.1s"/></g>
+  <g transform="translate(410 230)"><use href="#star" class="twinkle" style="animation-delay:1.3s"/></g>
+
+  <!-- tên đầy đủ -->
+  <text x="600" y="300" text-anchor="middle" class="label" font-size="22" letter-spacing="14" fill="url(#silver)">NGUYEN THANH LIEM</text>
+
+  <!-- dòng gõ chữ -->
+  <g class="mono" fill="#d6d9de">
+    <text x="372" y="352" textLength="456" lengthAdjust="spacingAndGlyphs" clip-path="url(#clip0)"><tspan fill="#7d848e">&gt; </tspan>yo, i'm liem — dropping code like bars</text>
+    <text x="360" y="352" textLength="480" lengthAdjust="spacingAndGlyphs" clip-path="url(#clip1)"><tspan fill="#7d848e">&gt; </tspan>JavaScript · TypeScript · HTML · Angular</text>
+    <text x="414" y="352" textLength="372" lengthAdjust="spacingAndGlyphs" clip-path="url(#clip2)"><tspan fill="#7d848e">&gt; </tspan>code như rap, bug thì freestyle</text>
+  </g>
+  <rect class="cursor" y="334" width="11" height="22" fill="#e5e4e2" x="372">
+    <animate attributeName="x"
+      values="374;830;830;374;362;842;842;362;416;788;788;416;374"
+      keyTimes="0;0.1333;0.2833;0.325;0.3333;0.4667;0.6167;0.6583;0.6667;0.8;0.95;0.9917;1"
+      dur="12s" repeatCount="indefinite"/>
+  </rect>
+
+  <rect x="0" y="398" width="1200" height="2" fill="url(#fadeLine)"/>
+</svg>

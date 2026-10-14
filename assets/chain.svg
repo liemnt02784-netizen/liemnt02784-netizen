@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="48" viewBox="0 0 1200 48">
+  <defs>
+    <linearGradient id="chromeV" gradientUnits="userSpaceOnUse" x1="0" y1="12" x2="0" y2="36">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.35" stop-color="#b4bac2"/>
+      <stop offset="0.5" stop-color="#f4f5f7"/>
+      <stop offset="0.62" stop-color="#5c636d"/>
+      <stop offset="1" stop-color="#d9dde2"/>
+    </linearGradient>
+
+    <!-- 1 mắt xích dọc + 1 mắt xích nằm, lặp lại như dây Cuban -->
+    <pattern id="links" width="44" height="48" patternUnits="userSpaceOnUse">
+      <ellipse cx="11" cy="24" rx="13" ry="8" fill="none" stroke="#1f2328" stroke-width="6"/>
+      <ellipse cx="11" cy="24" rx="13" ry="8" fill="none" stroke="url(#chromeV)" stroke-width="4"/>
+      <ellipse cx="33" cy="24" rx="13.5" ry="3.6" fill="url(#chromeV)" stroke="#1f2328" stroke-width="1.2"/>
+      <ellipse cx="-11" cy="24" rx="13.5" ry="3.6" fill="url(#chromeV)" stroke="#1f2328" stroke-width="1.2"/>
+      <ellipse cx="55" cy="24" rx="13" ry="8" fill="none" stroke="#1f2328" stroke-width="6"/>
+      <ellipse cx="55" cy="24" rx="13" ry="8" fill="none" stroke="url(#chromeV)" stroke-width="4"/>
+    </pattern>
+
+    <pattern id="linksMask" width="44" height="48" patternUnits="userSpaceOnUse">
+      <ellipse cx="11" cy="24" rx="13" ry="8" fill="none" stroke="#fff" stroke-width="4"/>
+      <ellipse cx="33" cy="24" rx="13.5" ry="3.6" fill="#fff"/>
+      <ellipse cx="-11" cy="24" rx="13.5" ry="3.6" fill="#fff"/>
+      <ellipse cx="55" cy="24" rx="13" ry="8" fill="none" stroke="#fff" stroke-width="4"/>
+    </pattern>
+    <mask id="m"><rect x="0" y="0" width="1200" height="48" fill="url(#linksMask)"/></mask>
+
+    <linearGradient id="shine" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="160" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+        values="-200 0; 1240 0; 1240 0" keyTimes="0; 0.6; 1" dur="4s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.08" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="0.92" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="edges"><rect width="1200" height="48" fill="url(#fade)"/></mask>
+  </defs>
+
+  <g mask="url(#edges)">
+    <rect width="1200" height="48" fill="url(#links)"/>
+    <rect width="1200" height="48" fill="url(#shine)" mask="url(#m)"/>
+  </g>
+</svg>
